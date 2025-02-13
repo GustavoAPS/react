@@ -1,4 +1,5 @@
-# React + Vite
+
+# React 
 
 Create the project with the command npm create vite@latest nasa-react-app, vite is just a build tool.
 
@@ -15,10 +16,33 @@ The main.jsx file is a central entry point in a React project. It typically boot
 | `npm run dev` | start the development server for your application. |
 | command . . . | description . . . |
 
-## Nasa App
 
-- Delete app.css
-- In react we build a project out of componenets that are a portion of related logic.
-- Every component is a function of jsx, that is HTML that can receive javascript directly in it.
-- React components are renerally captalized and have the same file name.
-- Use props to pass informations between components.
+### Components
+
+- Javascript functions that return markup.
+- A piece of UI that has its own logic and appearance.
+- Must start with Uppercase letters.
+- export default keywords specify the main component in the file.
+
+### Data from API
+- In react the way to fetch data from an api is, via an useEffect hook. (hook = function that leet you use state and lifecycle features).
+- The useEffect takes an arrow function as input and an dependency array
+
+`useEffect(() => {}, [])`
+
+- Blank dependency array will be called in page load.
+- if there is a variable in the array, the function will be called when the variable changes.
+
+### className
+- In react className is used instead of css class.
+
+### Display Data
+
+- Use { } to display data in components.
+
+### Conditional Rendering
+
+```jsx
+
+
+```
