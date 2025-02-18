@@ -1,10 +1,13 @@
 import React from 'react'
 
-export default function CalculatorDisplay() {
+export default function CalculatorDisplay(props) {
+
+  const { displayText } = props
+
   return (
     <div className='display-div'>
       <div className='display'>
-        <p>000.000.000.000</p>
+        <p>{displayText}</p>
       </div>
     </div>
   )

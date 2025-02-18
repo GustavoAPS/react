@@ -14,16 +14,16 @@ export default function CalculatorButtons(props) {
               <button>OFF</button>
               <button>√</button>
               <button>%</button>
-              <button>7</button>
-              <button>8</button>
+              <button onClick={() => {handleNumberClick('7')}}>7</button>
+              <button onClick={() => {handleNumberClick('8')}}>8</button>
               <button onClick={() => {handleNumberClick('9')}}>9</button>
-              <button>4</button>
-              <button>5</button>
-              <button>6</button>
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>0</button>
+              <button onClick={() => {handleNumberClick('4')}}>4</button>
+              <button onClick={() => {handleNumberClick('5')}}>5</button>
+              <button onClick={() => {handleNumberClick('6')}}>6</button>
+              <button onClick={() => {handleNumberClick('1')}}>1</button>
+              <button onClick={() => {handleNumberClick('2')}}>2</button>
+              <button onClick={() => {handleNumberClick('3')}}>3</button>
+              <button onClick={() => {handleNumberClick('0')}}>0</button>
               <button>.</button>
               <button>=</button>
           </div>

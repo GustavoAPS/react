@@ -7,8 +7,9 @@ function App() {
 
   const [displayText, setDisplayText] = useState('');
 
-  function handleNumberClick() {
-    setDisplayCount('9');
+  function handleNumberClick(buttonPressed) {
+    console.log(buttonPressed)
+    setDisplayText(buttonPressed)
   }
   
   return (
