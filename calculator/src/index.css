@@ -28,10 +28,17 @@
   border-radius: 7px;
 }
 
-.display p {
+.display-text-on {
   margin-top: 0px;
   margin-bottom: 0px;
   color: greenyellow;
+  margin-right: 3%;
+}
+
+.display-text-off {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #005500;
   margin-right: 3%;
 }
 

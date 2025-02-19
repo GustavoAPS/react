@@ -2,12 +2,17 @@ import React from 'react'
 
 export default function CalculatorDisplay(props) {
 
-  const { displayText } = props
+  const { displayText, calculatorOn } = props
+
+  let displayContent
+  calculatorOn ? (displayContent = displayText) : (displayContent = "@")
 
   return (
     <div className='display-div'>
       <div className='display'>
-        <p>{displayText}</p>
+        <p className={calculatorOn ? "display-text-on" : "display-text-off"}>
+          {displayContent}
+        </p>
       </div>
     </div>
   )

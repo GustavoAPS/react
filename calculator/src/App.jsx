@@ -5,7 +5,8 @@ import TopDecoration from './components/TopDecoration'
 
 function App() {
 
-  const [displayText, setDisplayText] = useState('');
+  const [calculatorOn, setCalculatorOn] = useState(true);
+  const [displayText, setDisplayText] = useState('0');
 
   function handleNumberClick(buttonPressed) {
     console.log(buttonPressed)
@@ -19,7 +20,7 @@ function App() {
       <div className="calculator-container">
         <TopDecoration />
         <CalculatorDisplay displayText={displayText} />
-        <CalculatorButtons  handleNumberClick={handleNumberClick} />     
+        <CalculatorButtons  handleNumberClick={handleNumberClick} calculatorOn={setCalculatorOn} />     
       </div>
     </>
   )
