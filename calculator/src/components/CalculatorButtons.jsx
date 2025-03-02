@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function CalculatorButtons(props) {
 
-  const { handleNumberClick } = props
+  const { handleNumberClick, handleEqualsButton,handlePowerButton } = props
 
   return (
     <div className='buttons-div'>
         <div className='buttons-container'>          
           <div className='left-side-buttons'>
-              <button>ON/CE</button>
+              <button onClick={() => {handlePowerButton()}}>ON/CE</button>
               <button>MRC</button>
               <button>M-</button>
               <button>OFF</button>
@@ -25,14 +25,14 @@ export default function CalculatorButtons(props) {
               <button onClick={() => {handleNumberClick('3')}}>3</button>
               <button onClick={() => {handleNumberClick('0')}}>0</button>
               <button>.</button>
-              <button>=</button>
+              <button onClick={() => {handleEqualsButton()}}>=</button>
           </div>
           <div className='right-side-buttons'>
               <button>M+</button>
-              <button>÷</button>
-              <button>x</button>
-              <button>-</button>
-              <button>+</button>
+              <button onClick={() => {handleNumberClick('÷')}}>÷</button>
+              <button onClick={() => {handleNumberClick('x')}}>x</button>
+              <button onClick={() => {handleNumberClick('-')}}>-</button>
+              <button onClick={() => {handleNumberClick('+')}}>+</button>
           </div>
         </div>
     </div>
